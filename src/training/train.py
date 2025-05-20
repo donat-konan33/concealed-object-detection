@@ -2,14 +2,18 @@
 
 from ultralytics import YOLO
 
-# Load a COCO-pretrained YOLOv8n model
+from pathlib import Path
+# define the path to the dataset
+# Load a pretrained YOLOv8n model
 model = YOLO("yolov8n.pt")
 
 # Display model information (optional)
 model.info()
 
-# Train the model on the COCO8 example dataset for 100 epochs
-results = model.train(data="coco8.yaml", epochs=100, imgsz=640)
+project_root = Path(__file__).resolve().parent.parent.parent
 
-# Run inference with the YOLOv8n model on the 'bus.jpg' image
-results = model("path/to/bus.jpg")
+# define the path to the dataset
+data_path = project_root / "data" / "splits" / "data.yaml"
+
+# Train the model on the dataset for 100 epochs
+results = model.train(data=data_path, epochs=100, imgsz=640)
