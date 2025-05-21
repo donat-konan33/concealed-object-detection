@@ -45,8 +45,8 @@ We do not have access to a GPU locally, so model training will be performed usin
 
 Clone the repository:
 ```bash
-git clone https://github.com/donat-konan33/ClassificationWithTransferlearning.git
-cd ClassificationWithTransferlearning
+git clone https://github.com/donat-konan33/ConcealedObjectsDetection.git
+cd ConcealedObjectsDetection
 ```
 
 Install dependencies:

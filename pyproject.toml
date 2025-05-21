@@ -1,5 +1,5 @@
 [project]
-name = "classificationwithtransferlearning"
+name = "concealedobjectsdetection"
 version = "0.1.0"
 description = ""
 authors = [
@@ -15,7 +15,7 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{include = "classificationwithtransferlearning", from = "src"}]
+packages = [{include = "concealedobjectsdetection", from = "src"}]
 
 
 [tool.poetry.group.dev.dependencies]
