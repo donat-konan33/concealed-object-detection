@@ -77,6 +77,11 @@ poetry install
 - Model training required significant time, taking approximately 8.28 hours on CPU.
 - Find more by reading [model training notebook](notebooks/3_model_training.ipynb)
 
+An example of detection :
+
+![detection](assets/images/object_or_not.png)
+
+
 ## Improvements
 To reduce computation time while preserving prediction accuracy, consider the following strategies:
 - Utilize GPU resources, such as those available through Google Colab, to accelerate training.
