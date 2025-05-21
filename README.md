@@ -1,4 +1,4 @@
-# CONCEALED OBJECT DETECTION VIA TERAHERTZ IMAGING
+# CONCEALED OBJECTS DETECTION VIA TERAHERTZ IMAGING
 ---
 
 ## Project Overview
@@ -9,7 +9,7 @@ This project focuses on detecting concealed objects using terahertz imaging and 
 
 YOLOv8 was released by Ultralytics on January 10th, 2023, offering cutting-edge performance in terms of accuracy and speed. Building upon the advancements of previous YOLO versions, YOLOv8 introduced new features and optimizations that make it an ideal choice for various object detection tasks in a wide range of applications.
 
-## Performance Metrics Overview of Comparison between different known and mostly models
+## Performance Metrics: Comparison Across Popular Models
 
 ![performance metrics](assets/images/performance-metrics-comparison.png)
 
@@ -57,6 +57,8 @@ pipx install poetry
 ```
 If ``pipx`` is not already installed, check [here](https://pipx.pypa.io/stable/installation/) for more information.
 
+Then:
+
 ```
 poetry install
 ```
@@ -67,12 +69,15 @@ poetry install
 2. Upload your dataset or mount Google Drive.
 3. Run the provided notebooks for training and evaluation.
 
+### Running onto local Machine with CPU if you have no choice
+**Note:** Training the model on a CPU can be very time-consuming. Please be prepared for longer training durations when not using GPU resources.
+
 ## Results
 - Achieved high accuracy in detecting concealed objects using terahertz imaging.
-- Model training required significant time, taking approximately 8.23 hours on CPU.
+- Model training required significant time, taking approximately 8.28 hours on CPU.
 - Find more by reading [model training notebook](notebooks/3_model_training.ipynb)
 
-## Improvement
+## Improvements
 To reduce computation time while preserving prediction accuracy, consider the following strategies:
 - Utilize GPU resources, such as those available through Google Colab, to accelerate training.
 - Apply optimization methods like image size or dimensionality reduction (e.g., using Principal Component Analysis, PCA).
