@@ -1,4 +1,4 @@
-path: /home/nokan/code/donat-konan33/ClassificationWithTransferlearning/data/splits
+path: /home/nokan/code/donat-konan33/ConcealedObjectsDetection/data/splits
 train: train/images
 val: val/images
 test: test/images

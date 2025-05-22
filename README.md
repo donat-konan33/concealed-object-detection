@@ -3,7 +3,7 @@
 
 ## Project Overview
 
-This project focuses on detecting concealed objects using terahertz imaging and state-of-the-art deep learning techniques. Leveraging the YOLOv8 architecture, we aim to provide accurate and efficient object detection suitable for security and screening applications.
+This project focuses on detecting concealed objects using terahertz imaging and state-of-the-art deep learning techniques. Leveraging the ``YOLOv8 architecture which is a Convolutional Neural Network technique based on Pytorch Framework``, we aim to provide accurate and efficient object detection suitable for security and screening applications.
 
 ## Using Yolov8 [object detection](https://docs.ultralytics.com/models/yolov8/)
 
@@ -85,7 +85,8 @@ An example of detection :
 ## Improvements
 To reduce computation time while preserving prediction accuracy, consider the following strategies:
 - Utilize GPU resources, such as those available through Google Colab, to accelerate training.
-- Apply optimization methods like image size or dimensionality reduction (e.g., using Principal Component Analysis, PCA).
+- Apply optimization methods like image size or dimensionality reduction (e.g., using Principal Component Analysis, PCA as show in this relevant [article](https://www.mdpi.com/1424-8220/21/4/1186))
+- Extract features to focus on relevant elements without noises
 - Restrict transfer learning to the convolutional layers of the YOLO architecture.
 
 ## Contributing
